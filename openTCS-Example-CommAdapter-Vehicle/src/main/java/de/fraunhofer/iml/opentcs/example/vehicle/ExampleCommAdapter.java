@@ -106,7 +106,7 @@ public class ExampleCommAdapter
     this.stateRequesterTask = componentsFactory.createStateRequesterTask(e -> {
       LOG.debug("Adding new state requests to the queue.");
       requestResponseMatcher.enqueueRequest(new StateRequest(Telegram.ID_DEFAULT));
-    }); //e->{}是lamada表达式表达的匿名类实现，实现了函数式接口ActionListener       
+    }); //e->{}是lamada表达式表达的匿名类实现，实现了函数式接口ActionListener.       
   }
 
   @Override
